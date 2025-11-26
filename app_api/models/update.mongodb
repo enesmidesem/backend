@@ -1,0 +1,74 @@
+const database = 'mekanbul';
+use(database);
+
+db.venues.updateOne({"name": "Barida Cam Kafe"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Sinan",
+      "rating": 5,
+      "text": "Kahveler harika",
+      "date": new Date()
+    }
+  }}
+);
+
+db.venues.updateOne({"name": "Uğur Pide"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Mehmet Tanrıverdi",
+      "rating": 5,
+      "text": "Isparta'daki açık ara en iyi pideci",
+      "date": new Date()
+    }
+  }}
+);
+
+db.venues.updateOne({"name": "Kokozade"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Ali Şansalan",
+      "rating": 4,
+      "text": "Halı saha sonrası karın kazınmasını geçirmek için birebir mekan",
+      "date": new Date()
+    }
+  }}
+);
+
+db.venues.updateOne({"name": "Bilge Kebap Evi"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Tansu Çiler",
+      "rating": 3,
+      "text": "Ortalamanın üstünde bir kebapçı,şiş köftesi tercih edilebilir.",
+      "date": new Date()
+    }
+  }}
+);
+
+db.venues.updateOne({"name": "Kebo"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Osman Abdüş",
+      "rating": 4,
+      "text": "Hatay usulü sosu domates çorbası gibi değil  o yüzden güzel",
+      "date": new Date()
+    }
+  }}
+);
+
+db.venues.updateOne({"name": "Boston Drink"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Selin Demir",
+      "rating": 2,
+      "text": "Sosyal medyada meşhur olan tatlıyı denedim abartıldığı kadar iyi olduğunu düşünmüyorum.", 
+      "date": new Date()
+    }
+  }}
+);

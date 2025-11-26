@@ -1,0 +1,73 @@
+const database = 'mekanbul';
+use(database);
+
+db.venues.insertMany([
+  {
+    "name": "Barida Cam Kafe",
+    "address": "Süleyman Demirel Üniversitesi",
+    "rating": 5,
+    "foodanddrink": ["çay", "kahve", "pasta"],
+    "coordinates": [37.83226584629666, 30.524732239878013],
+    "hours": [
+      { "days": "Pazartesi-Cuma", "open": "9:00", "close": "23:00", "isClosed": false },
+      { "days": "Cumartesi-Pazar", "open": "11:00", "close": "17:00", "isClosed": false }
+    ]
+  },
+
+  {
+    "name": "Uğur Pide",
+    "address": "Gül Petek Sanayi Sitesi",
+    "rating": 5,
+    "foodanddrink": ["kıymalı pide", "kuşbaşılı pide", "yayık ayran"],
+    "coordinates": [37.7750, 30.5600],
+    "hours": [
+      { "days": "Pazartesi-Cumartesi", "open": "08:00", "close": "20:00", "isClosed": false },
+      { "days": "Pazar", "open": "Kapalı", "close": "Kapalı", "isClosed": true }
+    ]
+  },
+
+  {
+    "name": "Kokozade",
+    "address": "Sanayi Mahallesi",
+    "rating": 4,
+    "foodanddrink": ["kokoreç", "midye dolma", "şalgam", "ayran"],
+    "coordinates": [37.7765, 30.5620],
+    "hours": [
+      { "days": "Pazartesi-Cumartesi", "open": "10:00", "close": "02:00", "isClosed": false },
+      { "days": "Pazar", "open": "12:00", "close": "02:00", "isClosed": false }
+    ]
+  },
+
+  {
+    "name": "Bilge Kebap Evi",
+    "address": "Şehir Merkezi",
+    "rating": 5,
+    "foodanddrink": ["adana kebap", "urfa kebap", "şiş köfte", "pide çeşitleri", "künefe"],
+    "coordinates": [37.7685, 30.5540],
+    "hours": [
+      { "days": "Pazartesi-Pazar", "open": "11:00", "close": "22:00", "isClosed": false }
+    ]
+  },
+
+  {
+    "name": "Kebo",
+    "address": "Çarşı",
+    "rating": 3,
+    "foodanddrink": ["hatay usulü tavuk dürüm", "patates kızartması", "kola", "ayran"],
+    "coordinates": [37.7700, 30.5550],
+    "hours": [
+      { "days": "Pazartesi-Pazar", "open": "10:00", "close": "23:00", "isClosed": false }
+    ]
+  },
+
+  {
+    "name": "Boston Drink",
+    "address": "Iyaş Park AVM",
+    "rating": 4,
+    "foodanddrink": ["waffle", "pasta", "kahve", "frozen"],
+    "coordinates": [37.7830, 30.5520],
+    "hours": [
+      { "days": "Pazartesi-Pazar", "open": "10:00", "close": "22:00", "isClosed": false }
+    ]
+  }
+]);
