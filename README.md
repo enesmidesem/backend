@@ -18,6 +18,6 @@ npm install
 ### Sunucuyu Başlatın
 npm start
 
-Başarılı çalıştırma sonrası terminalde şu çıktıyı göreceksiniz:
+### Başarılı çalıştırma sonrası terminalde şu çıktıyı göreceksiniz:
 Mongoose mongodb+srv:// ... adresindeki veritabanına bağlandı.
 
