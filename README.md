@@ -15,9 +15,9 @@ Bu proje, Web Teknolojileri ve Programlama dersi kapsamında geliştirilen Mekan
 ### Gerekli Paketleri Yükleyin
 npm install
 
-###Sunucuyu Başlatın
+### Sunucuyu Başlatın
 npm start
 
 Başarılı çalıştırma sonrası terminalde şu çıktıyı göreceksiniz:
-Mongoose mongodb+srv://eneskocaslan:bubirdenemesifresi@cluster0.iswsksq.mongodb.net/mekanbul?retryWrites=true&w=majority adresindeki veritabanına bağlandı.
+Mongoose mongodb+srv:// ... adresindeki veritabanına bağlandı.
 
